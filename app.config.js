@@ -3,7 +3,7 @@ import 'dotenv/config';
 export default {
   name: "reactCherry",
   slug: "reactCherry",
-  version: "1.0.0",
+  version: "1.3.0",
   orientation: "portrait",
   icon: "./icons/cherry-icon.png",
   userInterfaceStyle: "automatic",
@@ -17,7 +17,7 @@ export default {
   ],
   ios: {
     supportsTablet: true,
-    bundleIdentifier: "com.cherry.app"
+    bundleIdentifier: "breezy.cherry"
   },
   android: {
     adaptiveIcon: {
@@ -42,6 +42,9 @@ export default {
   newArchEnabled: true,
   // Add this extra section to pass env variables to native build
   extra: {
+    eas: {
+      projectId: "0a0f02ad-a9f0-4e99-89b7-308ea0cb9b9f"
+    },
     EXPO_PUBLIC_FIREBASE_API_KEY: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
     EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
     EXPO_PUBLIC_FIREBASE_PROJECT_ID: process.env.EXPO_PUBLIC_FIREBASE_PROJECT_ID,
