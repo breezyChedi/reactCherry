@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "jsx": "react-native",
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@firebase/auth": [
+        "./node_modules/@firebase/auth/dist/index.rn.d.ts"
+      ],
+      "@firebase/firestore": [
+        "./node_modules/@firebase/firestore/dist/index.rn.d.ts"
+      ],
+      "@react-native-firebase/*": [
+        "./node_modules/@react-native-firebase/*/lib/index.d.ts"
+      ]
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
